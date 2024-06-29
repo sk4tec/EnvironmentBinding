@@ -26,7 +26,8 @@ struct ContentView: View {
 }
 
 struct DetailView: View {
-    @EnvironmentObject var sharedVar: Data
+    @EnvironmentObject var sharedVar: Data // we can access Data object here using @EnvironmentObject
+
     var body: some View {
         VStack {
             Text("Detail View")
